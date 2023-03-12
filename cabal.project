@@ -1,0 +1,5 @@
+source-repository-package
+  type: git
+  location: https://github.com/floodhs/flood-api.git
+
+packages: ./flood-exporter.cabal

@@ -1,0 +1,81 @@
+name: flood-exporter
+
+version: 4.7.0.0
+
+license-file: LICENSE
+
+executable:
+  main: Main.hs
+  source-dirs: src
+
+  dependencies:
+    - base
+    - bytestring
+    - containers
+    - exceptions
+    - firefly
+    - flood-api
+    - modern-uri
+    - mtl
+    - optics
+    - optparse-applicative
+    - parser-combinators
+    - prometheus-client
+    - split
+    - text
+    - text-show
+    - time
+    - transformers
+    - unliftio-core
+    - unliftio
+    - wai
+
+  ghc-options:
+    - -fdefer-typed-holes
+    - -Wall
+    - -fno-warn-type-defaults
+    - -fno-warn-missing-home-modules
+    - -fno-warn-name-shadowing
+    - -fno-warn-orphans
+    - -Wcompat
+    - -Wincomplete-patterns
+    - -Wincomplete-record-updates
+    - -Wincomplete-uni-patterns
+    - -Wredundant-constraints
+    - -funbox-strict-fields
+    - -O2
+
+  default-extensions:
+    - GHC2021
+
+    - AllowAmbiguousTypes
+    - ApplicativeDo
+    - BlockArguments
+    - DataKinds
+    - DefaultSignatures
+    - DeriveAnyClass
+    - DerivingStrategies
+    - DerivingVia
+    - DuplicateRecordFields
+    - FunctionalDependencies
+    - GADTs
+    - LambdaCase
+    - MagicHash
+    - MultiWayIf
+    - NoFieldSelectors
+    - NoStarIsType
+    - OverloadedLabels
+    - OverloadedRecordDot
+    - OverloadedStrings
+    - PartialTypeSignatures
+    - PatternSynonyms
+    - QuantifiedConstraints
+    - QuasiQuotes
+    - RecordWildCards
+    - RoleAnnotations
+    - StrictData
+    - TemplateHaskell
+    - TypeFamilies
+    - TypeFamilyDependencies
+    - UndecidableInstances
+    - ViewPatterns
